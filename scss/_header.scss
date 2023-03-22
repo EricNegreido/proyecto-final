@@ -1,0 +1,66 @@
+.header{
+    animation-name: delayNav;
+    animation-duration: 2.5s;
+
+    .navbar-menu{
+        background-color: $color-principal;
+        
+    }
+    .navbar{
+        background-color: $color-principal;
+        height: 20vh;
+        .color-nav{
+            color: $color-texto;
+        }
+    }
+    .logo{
+        img{
+            border-radius: 50%;
+            height: 15vh;
+            margin: 0;
+            padding: 0 5px;
+        }
+    }
+}
+@keyframes delayNav{
+    0%{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@mixin animation{
+    width:50%;
+    animation-name:delayNav;
+    animation-duration: 2.5s;
+}
+.img-inicio{
+    background-image:url(../img/fondo.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: $color-texto;
+
+    p{
+    
+        font-size: 1.2rem;
+        @include animation();
+    }
+
+    h1{
+        font-size: 1.8rem;
+
+        @include animation();
+    }
+
+}

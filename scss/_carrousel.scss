@@ -1,0 +1,31 @@
+@mixin carrusel($img){
+    
+    background-image: $img;
+    background-repeat:no-repeat;
+    background-size:cover ;
+    background-position: center;
+    height: 50vh;
+    text-align: center;
+    color: #000;
+    opacity: 0.9;
+    padding:20% 0;
+    
+}
+
+.carrusel{
+    .slide1{
+        @include carrusel(url(../img/cervezas.jpg));
+    }
+    .slide2{
+        @include carrusel(url(../img/mojitos.jpg));
+    }
+    .slide3{
+        @include carrusel(url(../img/licuados.jpg))
+    }
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

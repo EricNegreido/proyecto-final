@@ -1,0 +1,17 @@
+.footer{
+    border-top:solid 1px #111;
+    height: 16vh;
+    padding-top: 2rem;
+    background-color: rgba(69, 63, 57);
+    .red{
+        i{
+            font-size: 2.5rem;
+        }
+    }
+    .color-nav{
+        &:hover{
+            color: $color-texto;
+        }
+        color:#111;
+    }
+}

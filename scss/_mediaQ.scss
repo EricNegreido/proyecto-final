@@ -1,0 +1,148 @@
+@media screen and (min-width:700px) {
+
+    * {
+        font-size: 1rem;
+    }
+
+    @mixin media-tablet {
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .main-principal {
+        @include media-tablet;
+
+    }
+
+    .sobre-nosotros {
+        @include media-tablet;
+    }
+
+    .carrusel {
+        @include media-tablet;
+
+    }
+
+    .main-cont {
+        @include media-tablet;
+        .main-carta {
+            width: 80%;
+            margin: 10px auto;
+            .carta-presentacion {
+                height: 45vh;
+    
+                img {
+                    height: 30vh;
+                }
+            }
+        }
+    }
+
+    .main-cerveza {
+        @include media-tablet;
+
+    }
+
+    .img-contacto {
+        background-color: #212120;
+        width: 40%;
+        height: 90vh;
+    }
+
+    .formulario-contacto {
+        width: 60%;
+        height: 90vh;
+    }
+
+    .main-contacto {
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .header {
+        .navbar {
+            height: 14vh;
+        }
+    }
+
+    .header {
+        .logo {
+            img {
+                height: 10vh;
+            }
+        }
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width:992px) {
+
+    .main-carta {
+        .carta-presentacion {
+            height: 40vh;
+
+            img {
+                height: 25vh;
+            }
+        }
+    }
+
+    .header {
+        .navbar {
+            height: 12vh;
+
+            form {
+                width: 40%;
+            }
+        }
+
+    }
+
+    .header {
+        .logo {
+            img {
+                height: 10vh;
+            }
+        }
+    }
+
+    @each $selector in main-principal,
+    sobre-nosotros,
+    main-cerveza,
+    carrusel,
+    main-cont {
+        .#{$selector} {
+            width: 60%;
+        }
+    }
+
+
+    .header {
+        .navbar-collapse {
+            background-color: transparent;
+        }
+    }
+
+    .img-contacto {
+        height: 80vh;
+        width: 50%;
+
+    }
+
+    .formulario-contacto {
+        height: 80vh;
+        width: 50%;
+    }
+
+    .main-contacto {
+        padding: 20px 10px;
+        width: 80%;
+    }
+
+    .main-cont {
+        .main-carta {
+            width: 70%;
+            margin: 5px auto;
+        }
+    }
+}

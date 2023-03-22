@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #aaa;
+}
+
+.header {
+  animation-name: delayNav;
+  animation-duration: 2.5s;
+}
+.header .navbar-menu {
+  background-color: rgba(69, 63, 57, 0.8);
+}
+.header .navbar {
+  background-color: rgba(69, 63, 57, 0.8);
+  height: 20vh;
+}
+.header .navbar .color-nav {
+  color: #FFF;
+}
+.header .logo img {
+  border-radius: 50%;
+  height: 15vh;
+  margin: 0;
+  padding: 0 5px;
+}
+
+@keyframes delayNav {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.img-inicio {
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #FFF;
+}
+.img-inicio p {
+  font-size: 1.2rem;
+  width: 50%;
+  animation-name: delayNav;
+  animation-duration: 2.5s;
+}
+.img-inicio h1 {
+  font-size: 1.8rem;
+  width: 50%;
+  animation-name: delayNav;
+  animation-duration: 2.5s;
+}
+
+.main-principal {
+  width: 90%;
+  margin: 10px auto;
+  border: solid 1px rgba(85, 85, 85, 0.5333333333);
+  border-radius: 10px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1333333333);
+  padding: 20px;
+  background-color: #eee;
+}
+
+.carrusel .slide1 {
+  background-image: url(../img/cervezas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  text-align: center;
+  color: #000;
+  opacity: 0.9;
+  padding: 20% 0;
+}
+.carrusel .slide2 {
+  background-image: url(../img/mojitos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  text-align: center;
+  color: #000;
+  opacity: 0.9;
+  padding: 20% 0;
+}
+.carrusel .slide3 {
+  background-image: url(../img/licuados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  text-align: center;
+  color: #000;
+  opacity: 0.9;
+  padding: 20% 0;
+}
+.carrusel h3 {
+  font-size: 3rem;
+}
+.carrusel p {
+  font-size: 1rem;
+}
+
+.sobre-nosotros {
+  width: 90%;
+  margin: 10px auto;
+  border: solid 1px rgba(85, 85, 85, 0.5333333333);
+  border-radius: 10px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.1333333333);
+  padding: 20px;
+  background-color: #ddd;
+}
+
+.footer {
+  border-top: solid 1px #111;
+  height: 16vh;
+  padding-top: 2rem;
+  background-color: rgb(69, 63, 57);
+}
+.footer .red i {
+  font-size: 2.5rem;
+}
+.footer .color-nav {
+  color: #111;
+}
+.footer .color-nav:hover {
+  color: #FFF;
+}
+
+.main-cerveza {
+  padding: 5px 15px;
+  width: 90%;
+  margin: 10px auto;
+  border: solid 1px rgba(85, 85, 85, 0.5333333333);
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1333333333);
+  padding: 20px;
+}
+
+.img-cerveza {
+  background-image: url(../img/cerveza.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+  color: #FFF;
+}
+
+.img-cerveza h1 {
+  width: 50%;
+  animation-name: delayNav;
+  animation-duration: 2.5s;
+}
+.img-cerveza p {
+  width: 50%;
+  animation-name: delayNav;
+  animation-duration: 2.5s;
+}
+
+.main-contacto {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.formulario-contacto {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  border: solid 1px rgb(69, 63, 57);
+  width: 100%;
+  padding: 5px;
+}
+.formulario-contacto .formulario {
+  width: 80%;
+}
+.formulario-contacto label {
+  display: block;
+  padding: 5px;
+}
+.formulario-contacto input {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+}
+.formulario-contacto input:focus {
+  outline: solid 2px rgb(69, 63, 57);
+}
+.formulario-contacto textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  margin: 5px;
+}
+.formulario-contacto textarea:focus {
+  outline: solid 2px rgb(69, 63, 57);
+}
+.formulario-contacto .btn-login {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bold;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(69, 63, 57);
+  color: #fff;
+}
+.formulario-contacto .btn-login:hover {
+  background-color: #222;
+}
+
+.main-carta .carta-presentacion, .main-carta .carta-presentacion-salc {
+  color: #FFF;
+  background: rgb(69, 63, 57);
+  width: 300px;
+  height: 60vh;
+  margin: 2px;
+  border-radius: 10px;
+  padding: 0;
+  border: solid 1px #fff;
+  font-weight: 300;
+  position: relative;
+}
+.main-carta .carta-presentacion .descripcion, .main-carta .carta-presentacion-salc .descripcion {
+  background-color: rgba(34, 34, 34, 0.7333333333);
+  font-size: 3rem;
+  font-weight: 600;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+}
+.main-carta .carta-presentacion .descripcion li, .main-carta .carta-presentacion-salc .descripcion li {
+  list-style: none;
+  font-size: 25px;
+}
+.main-carta .carta-presentacion:hover .descripcion, .main-carta .carta-presentacion-salc:hover .descripcion {
+  display: flex;
+  transform: scale(0.9);
+}
+.main-carta .carta-presentacion:hover .img-descripcion, .main-carta .carta-presentacion-salc:hover .img-descripcion {
+  filter: brightness(0.4);
+}
+.main-carta .carta-presentacion img, .main-carta .carta-presentacion-salc img {
+  width: 100%;
+  height: 40vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #fff;
+}
+.main-carta .carta-presentacion a, .main-carta .carta-presentacion-salc a {
+  text-decoration: none;
+  color: #FFF;
+}
+.main-carta .carta-presentacion p, .main-carta .carta-presentacion-salc p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+.main-carta .main-cont .text-center p {
+  text-align: center;
+}
+.main-carta .carta-presentacion-salc {
+  transition: all 400ms ease;
+}
+.main-carta .carta-presentacion-salc:hover {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 700px) {
+  * {
+    font-size: 1rem;
+  }
+  .main-principal {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .sobre-nosotros {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .carrusel {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .main-cont {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .main-cont .main-carta {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .main-cont .main-carta .carta-presentacion, .main-cont .main-carta .carta-presentacion-salc {
+    height: 45vh;
+  }
+  .main-cont .main-carta .carta-presentacion img, .main-cont .main-carta .carta-presentacion-salc img {
+    height: 30vh;
+  }
+  .main-cerveza {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .img-contacto {
+    background-color: #212120;
+    width: 40%;
+    height: 90vh;
+  }
+  .formulario-contacto {
+    width: 60%;
+    height: 90vh;
+  }
+  .main-contacto {
+    width: 80%;
+    margin: 5px auto;
+  }
+  .header .navbar {
+    height: 14vh;
+  }
+  .header .logo img {
+    height: 10vh;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .main-carta .carta-presentacion, .main-carta .carta-presentacion-salc {
+    height: 40vh;
+  }
+  .main-carta .carta-presentacion img, .main-carta .carta-presentacion-salc img {
+    height: 25vh;
+  }
+  .header .navbar {
+    height: 12vh;
+  }
+  .header .navbar form {
+    width: 40%;
+  }
+  .header .logo img {
+    height: 10vh;
+  }
+  .main-principal {
+    width: 60%;
+  }
+  .sobre-nosotros {
+    width: 60%;
+  }
+  .main-cerveza {
+    width: 60%;
+  }
+  .carrusel {
+    width: 60%;
+  }
+  .main-cont {
+    width: 60%;
+  }
+  .header .navbar-collapse {
+    background-color: transparent;
+  }
+  .img-contacto {
+    height: 80vh;
+    width: 50%;
+  }
+  .formulario-contacto {
+    height: 80vh;
+    width: 50%;
+  }
+  .main-contacto {
+    padding: 20px 10px;
+    width: 80%;
+  }
+  .main-cont .main-carta {
+    width: 70%;
+    margin: 5px auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

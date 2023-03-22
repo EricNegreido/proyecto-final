@@ -1,0 +1,81 @@
+.main-carta {
+    .carta-presentacion {
+        color: $color-texto;
+        background: $color-detalle-1;
+        width: 300px;
+        height: 60vh;
+        margin: 2px;
+        border-radius: 10px;
+        padding: 0;
+        border: solid 1px $color-detalle-2;
+        font-weight:300;
+        position: relative;
+        .descripcion{
+            background-color: #222b;
+            font-size: 3rem;
+            font-weight: 600;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top:0px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid $color-detalle-2;
+
+            li{
+                list-style: none;
+                font-size: 25px;
+            }
+            
+        }
+        &:hover{
+            .descripcion{
+                display:flex;
+                transform: scale(.9);
+
+            }
+            .img-descripcion{
+                filter: brightness(.4);
+            }
+        }
+        
+        img {
+            width: 100%;
+            height: 40vh;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 1px solid $color-detalle-2;
+
+        }
+        a {
+            text-decoration: none;
+            color: $color-texto;
+        }
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 25px;
+        }
+    }
+
+    .main-cont {
+        .text-center p{
+            text-align: center;
+
+        }
+    }
+
+    .carta-presentacion-salc{
+        @extend .carta-presentacion;
+        transition: all 400ms ease;
+    
+        &:hover{
+            box-shadow: 5px 5px 25px rgb(0,0,0,.6);
+            transform:translateY(-5px);
+        }
+    }
+}
+
