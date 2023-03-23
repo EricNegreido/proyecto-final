@@ -1,14 +1,16 @@
 .header{
     animation-name: delayNav;
     animation-duration: 2.5s;
+    height: 20vh;
+
 
     .navbar-menu{
-        background-color: $color-principal;
+        padding: 10px; 
+
         
     }
     .navbar{
         background-color: $color-principal;
-        height: 20vh;
         .color-nav{
             color: $color-texto;
         }
@@ -29,7 +31,6 @@
     }
     100%{
         opacity: 1;
-        transform: translateY(0);
     }
 }
 @mixin animation{
