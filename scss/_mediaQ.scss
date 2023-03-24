@@ -25,12 +25,14 @@
 
     .main-cont {
         @include media-tablet;
+
         .main-carta {
             width: 80%;
             margin: 10px auto;
+
             .carta-presentacion {
                 height: 45vh;
-    
+
                 img {
                     height: 30vh;
                 }
@@ -70,6 +72,21 @@
             }
         }
     }
+
+    .galeria-cerveza {
+        .carta {
+            height: 50vh;
+
+            h5 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
 }
 
 /* DESKTOP */
@@ -143,6 +160,12 @@
         .main-carta {
             width: 70%;
             margin: 5px auto;
+        }
+    }
+
+    .galeria-cerveza {
+        .carta {
+            height: 50vh;
         }
     }
 }

@@ -10,6 +10,8 @@
 
     .navbar {
         background-color: $color-principal;
+        border-bottom: 1px solid #000;
+
         .navbar-menu {
             .color-nav {
                 color: $color-texto;

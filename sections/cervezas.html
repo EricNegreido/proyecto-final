@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="escubre el fascinante mundo de las cervezas en nuestra página. Te ofrecemos una amplia selección de variedades, desde las clásicas hasta las más innovadoras, incluyendo marcas internacionales y cervezas artesanales.">
-    <meta name="keywords" content="cervezas, variedades de cervezas, cervezas artesanales, marcas de cervezas, cervezas internacionales, cata de cervezas, Artesanales">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description"
+        content="escubre el fascinante mundo de las cervezas en nuestra página. Te ofrecemos una amplia selección de variedades, desde las clásicas hasta las más innovadoras, incluyendo marcas internacionales y cervezas artesanales.">
+    <meta name="keywords"
+        content="cervezas, variedades de cervezas, cervezas artesanales, marcas de cervezas, cervezas internacionales, cata de cervezas, Artesanales">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../img/logo.png" />
     <title>Cervezas Rubia, Roja, Negra</title>
 </head>
@@ -90,10 +93,11 @@
         <p>
 
             SRM(Standard Reference Method): Unidades de color americanas,
-            es la escala y método norteamericano para medir el color de la malta y la cerveza. Una unidad SRM es la cantidad
+            es la escala y método norteamericano para medir el color de la malta y la cerveza. Una unidad SRM es la
+            cantidad
             de luz a 430 nm que puede pasar a través de 1 centímetro de cerveza en un fotómetro.
         </p>
-            
+
         <ul>
             <li><a href="#">Cervezas pálidas o rubias (04-12 EBC) o (02-06 SRM)</a></li>
             <li><a href="#">Cervezas ámbar o tostadas (12-47 EBC) o (06-24 SRM)</a></li>
@@ -102,10 +106,38 @@
 
 
     </main>
-    <section class=" row galeria-cerveza justify-content-center">
-        <a href="#" class="col-sm-4 col-md-3 col-lg-2 cerveza1"></a>
-        <a href="#" class="col-sm-4 col-md-3 col-lg-2 cerveza2"></a>
-        <a href="#" class="col-sm-4 col-md-3 col-lg-2 cerveza3"></a>
+    <section class=" galeria-cerveza  row row-cols-1 row-cols-md-3 g-4">
+        <div class="col col-xs-10 col-sm-8 col-md-3">
+            <div class="carta card">
+                <img src="../img/negra.jpg" class="card-img-top" alt="Pinta de cerveza negra">
+                <div class="card-body">
+                    <h5 class="card-title">Negra</h5>
+                    <p class="card-text"> Se elaborada con maltas tostadas o quemadas, lo que le da un sabor y color
+                        oscuros característicos. Suele tener un cuerpo más pesado que otras cervezas y un sabor a malta
+                        tostada y chocolate</p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-xs-10 col-sm-8 col-md-3">
+            <div class="carta card">
+                <img src="../img/cervezaRubia.jpg" class="card-img-top" alt="Pinta de cerveza rubia">
+                <div class="card-body">
+                    <h5 class="card-title">Rubia</h5>
+                    <p class="card-text">Se elabora con maltas más claras y puede tener un sabor suave y ligero, o ser
+                        más amarga y con más cuerpo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col col-xs-10 col-sm-8 col-md-3">
+            <div class="carta card">
+                <img src="../img/roja.png" class="carta-img card-img-top" alt="Pinta de cerveza roja">
+                <div class="card-body">
+                    <h5 class="card-title">Roja</h5>
+                    <p class="card-text">Se elabora con maltas caramelizadas, que le dan un sabor a caramelo y un cuerpo
+                        más pesado que las cervezas rubias. Puede tener un sabor dulce o amargo</p>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="container-fluid footer">
         <ul class="nav justify-content-center">

@@ -1,17 +1,20 @@
-.footer{
-    border-top:solid 1px #111;
+.footer {
+    border-top: solid 1px #111;
     height: 16vh;
     padding-top: 2rem;
     background-color: $color-detalle-1;
-    .red{
-        i{
+
+    .red {
+        i {
             font-size: 2.5rem;
         }
     }
-    .color-nav{
-        &:hover{
+
+    .color-nav {
+        &:hover {
             color: $color-texto;
         }
+
         color:#111;
     }
 }

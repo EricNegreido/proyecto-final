@@ -8,9 +8,10 @@
         border-radius: 10px;
         padding: 0;
         border: solid 1px $color-detalle-2;
-        font-weight:300;
+        font-weight: 300;
         position: relative;
-        .descripcion{
+
+        .descripcion {
             background-color: #222b;
             font-size: 3rem;
             font-weight: 600;
@@ -18,30 +19,32 @@
             text-align: center;
             width: 100%;
             height: 100%;
-            top:0px;
+            top: 0px;
             display: none;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             border: 1px solid $color-detalle-2;
 
-            li{
+            li {
                 list-style: none;
                 font-size: 25px;
             }
-            
+
         }
-        &:hover{
-            .descripcion{
-                display:flex;
+
+        &:hover {
+            .descripcion {
+                display: flex;
                 transform: scale(.9);
 
             }
-            .img-descripcion{
+
+            .img-descripcion {
                 filter: brightness(.4);
             }
         }
-        
+
         img {
             width: 100%;
             height: 40vh;
@@ -50,10 +53,12 @@
             border-bottom: 1px solid $color-detalle-2;
 
         }
+
         a {
             text-decoration: none;
             color: $color-texto;
         }
+
         p {
             margin-top: 1rem;
             margin-bottom: 1rem;
@@ -62,20 +67,19 @@
     }
 
     .main-cont {
-        .text-center p{
+        .text-center p {
             text-align: center;
 
         }
     }
 
-    .carta-presentacion-salc{
+    .carta-presentacion-salc {
         @extend .carta-presentacion;
         transition: all 400ms ease;
-    
-        &:hover{
-            box-shadow: 5px 5px 25px rgb(0,0,0,.6);
-            transform:translateY(-5px);
+
+        &:hover {
+            box-shadow: 5px 5px 25px rgb(0, 0, 0, .6);
+            transform: translateY(-5px);
         }
     }
 }
-

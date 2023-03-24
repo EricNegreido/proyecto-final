@@ -6,10 +6,13 @@
     border-radius: 10px;
     box-shadow: 3px 3px #0002;
     padding: 20px;
-    h1{
+    background-color: $color-fondo-texto;
+
+    h1 {
         text-align: center;
     }
-    h2{
+
+    h2 {
         font-weight: $texto-bold;
     }
 
@@ -32,11 +35,34 @@
     color: $color-texto;
 }
 
-.img-cerveza{
-    h1{
+.img-cerveza {
+    h1 {
         @include animation();
     }
-    p{
+
+    p {
         @include animation();
+    }
+}
+
+.galeria-cerveza {
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    background-color: $color-detalle-1;
+
+    .carta {
+        margin: 10px auto;
+        text-align: center;
+
+        h5 {
+            font-size: 1rem;
+            font-weight: $texto-bold;
+        }
+
+        p {
+            font-size: .8rem;
+            font-style: italic;
+        }
     }
 }

@@ -48,13 +48,15 @@
         border: solid 1px #ccc;
         border-radius: 5px;
         margin: 5px;
+
         &:focus {
             outline: solid 2px $color-detalle-1;
 
         }
     }
-    .btn-login{
-        border:none;
+
+    .btn-login {
+        border: none;
         padding: 15px 0;
         width: 100%;
         font-weight: bold;
@@ -64,7 +66,8 @@
         cursor: pointer;
         background-color: $color-detalle-1;
         color: $color-texto;
-        &:hover{
+
+        &:hover {
             background-color: #222;
         }
     }
