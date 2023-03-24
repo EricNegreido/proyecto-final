@@ -12,7 +12,7 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    border: solid 1px rgba(69, 63, 57);
+    border: solid 1px $color-detalle-1;
     width: 100%;
     padding: 5px;
 
@@ -35,7 +35,7 @@
         border-radius: 5px;
 
         &:focus {
-            outline: solid 2px rgba(69, 63, 57);
+            outline: solid 2px $color-detalle-1;
 
         }
     }
@@ -49,7 +49,7 @@
         border-radius: 5px;
         margin: 5px;
         &:focus {
-            outline: solid 2px rgba(69, 63, 57);
+            outline: solid 2px $color-detalle-1;
 
         }
     }
@@ -62,8 +62,8 @@
         border-radius: 5px;
         text-transform: uppercase;
         cursor: pointer;
-        background-color: rgba(69, 63, 57);
-        color: #fff;
+        background-color: $color-detalle-1;
+        color: $color-texto;
         &:hover{
             background-color: #222;
         }

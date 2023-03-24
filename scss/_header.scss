@@ -1,22 +1,24 @@
-.header{
+.header {
     animation-name: delayNav;
     animation-duration: 2.5s;
     height: 20vh;
 
 
-    .navbar-menu{
-        padding: 10px; 
-
-        
+    .navbar-menu {
+        padding: 10px;
     }
-    .navbar{
+
+    .navbar {
         background-color: $color-principal;
-        .color-nav{
-            color: $color-texto;
+        .navbar-menu {
+            .color-nav {
+                color: $color-texto;
+            }
         }
     }
-    .logo{
-        img{
+
+    .logo {
+        img {
             border-radius: 50%;
             height: 15vh;
             margin: 0;
@@ -24,22 +26,26 @@
         }
     }
 }
-@keyframes delayNav{
-    0%{
-        opacity:0;
-        transform:translateY(-50px);
+
+@keyframes delayNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@mixin animation{
-    width:50%;
-    animation-name:delayNav;
+
+@mixin animation {
+    width: 50%;
+    animation-name: delayNav;
     animation-duration: 2.5s;
 }
-.img-inicio{
-    background-image:url(../img/fondo.jpg);
+
+.img-inicio {
+    background-image: url(../img/fondo.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -52,13 +58,13 @@
     text-align: center;
     color: $color-texto;
 
-    p{
-    
+    p {
+
         font-size: 1.2rem;
         @include animation();
     }
 
-    h1{
+    h1 {
         font-size: 1.8rem;
 
         @include animation();

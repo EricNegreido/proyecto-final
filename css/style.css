@@ -20,7 +20,7 @@ body {
 .header .navbar {
   background-color: rgba(69, 63, 57, 0.8);
 }
-.header .navbar .color-nav {
+.header .navbar .navbar-menu .color-nav {
   color: #FFF;
 }
 .header .logo img {
@@ -157,6 +157,12 @@ body {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1333333333);
   padding: 20px;
 }
+.main-cerveza h1 {
+  text-align: center;
+}
+.main-cerveza h2 {
+  font-weight: bold;
+}
 
 .img-cerveza {
   background-image: url(../img/cerveza.jpg);
@@ -243,7 +249,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   background-color: rgb(69, 63, 57);
-  color: #fff;
+  color: #FFF;
 }
 .formulario-contacto .btn-login:hover {
   background-color: #222;
@@ -376,8 +382,11 @@ body {
   .main-carta .carta-presentacion img, .main-carta .carta-presentacion-salc img {
     height: 25vh;
   }
-  .header .navbar {
+  .header {
     height: 12vh;
+  }
+  .header .navbar {
+    padding: 0 15px;
   }
   .header .navbar form {
     width: 40%;

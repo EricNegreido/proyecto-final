@@ -86,8 +86,10 @@
     }
 
     .header {
+        height: 12vh;
+
         .navbar {
-            height: 12vh;
+            padding: 0 15px;
 
             form {
                 width: 40%;
